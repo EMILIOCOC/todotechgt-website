@@ -3,107 +3,256 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>TodoTech GT</title>
+
 <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-font-family:Arial,sans-serif;
-margin:0;
-background:#f5f7fa;
-color:#333;
+    font-family:Segoe UI, Arial, sans-serif;
+    background:#f5f7fb;
+    color:#333;
 }
+
 header{
-background:#002d72;
-color:white;
-text-align:center;
-padding:60px 20px;
+    background:#052f78;
+    padding:20px 40px;
 }
-section{
-padding:40px 20px;
-max-width:1000px;
-margin:auto;
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
-.card{
-background:white;
-padding:20px;
-margin:10px 0;
-border-radius:8px;
-box-shadow:0 2px 8px rgba(0,0,0,.1);
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:600;
 }
-footer{
-background:#002d72;
-color:white;
-text-align:center;
-padding:20px;
+
+.hero{
+    background:#052f78;
+    color:white;
+    text-align:center;
+    padding:60px 20px 80px;
 }
+
+.hero img{
+    width:280px;
+    max-width:90%;
+}
+
+.hero h1{
+    margin-top:20px;
+    font-size:48px;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+}
+
 .btn{
-display:inline-block;
-background:#0f6fff;
-color:white;
-padding:12px 20px;
-text-decoration:none;
-border-radius:5px;
+    display:inline-block;
+    margin-top:30px;
+    background:#0f6fff;
+    color:white;
+    padding:14px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
 }
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#052f78;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    padding:25px;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:#052f78;
+    margin-bottom:15px;
+}
+
+.about{
+    text-align:center;
+    line-height:1.8;
+    max-width:900px;
+    margin:auto;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+footer{
+    background:#052f78;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    text-align:center;
+    line-height:60px;
+    text-decoration:none;
+    font-size:28px;
+}
+
 </style>
 </head>
+
 <body>
 
 <header>
-<img src="logo.png" alt="TodoTech GT Logo" ía que impulsa tu negocio</p>
-<h1>TODOTECH GT</h1>
-<p>Tecnología que impulsa tu negocio</p>
+<nav>
+<div style="color:white;font-size:24px;font-weight:bold;">
+TODOTECH GT
+</div>
+
+<div>
+#servicios
+#nosotros
+#contacto
+</div>
+</nav>
 </header>
 
-<section>
-<h2>Soluciones Tecnológicas para Empresas y Hogares</h2>
+<section class="hero">
 
-<p>
-Soporte IT, Redes, Cámaras de Seguridad,
-Microsoft 365 y Seguridad Informática.
-</p>
+logo.png
 
-<br>
+<h1>TODO TECH GT</h1>
+
+<p>Tecnología que impulsa tu negocio</p>
 
 <a class="btn" href="mailto:info@todotechgt.com">
 Solicitar Información
 </a>
+
 </section>
 
-<section>
-<h2>Servicios</h2>
+<section class="container" id="servicios">
+
+<h2 class="section-title">Nuestros Servicios</h2>
+
+<div class="cards">
 
 <div class="card">
 <h3>💻 Soporte IT</h3>
-<p>Mantenimiento preventivo y correctivo.</p>
+<p>Mantenimiento preventivo y correctivo para equipos de cómputo.</p>
 </div>
 
 <div class="card">
 <h3>🌐 Redes</h3>
-<p>Implementación y soporte de redes empresariales.</p>
+<p>Configuración e implementación de redes empresariales.</p>
 </div>
 
 <div class="card">
 <h3>📹 Cámaras</h3>
-<p>Instalación y monitoreo de seguridad.</p>
+<p>Instalación y monitoreo de sistemas de videovigilancia.</p>
 </div>
 
 <div class="card">
 <h3>☁️ Microsoft 365</h3>
-<p>Correo corporativo y colaboración empresarial.</p>
+<p>Correo corporativo, Teams, OneDrive y productividad.</p>
+</div>
+
+<div class="card">
+<h3>🔒 Seguridad Informática</h3>
+<p>Protección de infraestructura y usuarios.</p>
+</div>
+
+<div class="card">
+<h3>🖥️ Equipos Tecnológicos</h3>
+<p>Venta y asesoría de computadoras y componentes.</p>
+</div>
+
 </div>
 
 </section>
 
-<section>
-<h2>Contacto</h2>
+<section class="container" id="nosotros">
+
+<h2 class="section-title">Nosotros</h2>
+
+<div class="about">
+
+<p>
+
+En TodoTech GT brindamos soluciones tecnológicas para
+empresas y hogares en Guatemala.
+
+Nuestro objetivo es ayudar a nuestros clientes mediante
+servicios de soporte IT, infraestructura de red,
+seguridad informática, cámaras de vigilancia y
+plataformas Microsoft 365.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="container contact" id="contacto">
+
+<h2 class="section-title">Contacto</h2>
 
 <p>📧 info@todotechgt.com</p>
 <p>🌐 www.todotechgt.com</p>
-<p>📱 +502 0000 0000</p>
+<p>📱 +502 4107 6686</p>
+
 </section>
 
 <footer>
-© 2026 TodoTech GT
+
+© 2026 TodoTech GT | Todos los derechos reservados
+
 </footer>
+
+https://wa.me/50241076686💬</a>
 
 </body>
 </html>
