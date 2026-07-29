@@ -55,9 +55,9 @@ nav a:hover{
 }
 
 .hero img{
-
-    width:280px;
-    max-width:90%;
+    width:100%;
+    max-width:400px;
+    height:auto;
     filter:drop-shadow(0 0 20px rgba(37,99,235,0.5));
 }
 
@@ -206,6 +206,34 @@ footer{
     max-height:150px;
     object-fit:contain;
 }
+    @media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .menu{
+        flex-direction:column;
+        gap:12px;
+        text-align:center;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .hero-subtitle{
+        font-size:1.3rem;
+    }
+
+    .container{
+        padding:30px 15px;
+    }
+
+    .logo-menu{
+        font-size:24px;
+    }
 ``
 </style>
 </head>
